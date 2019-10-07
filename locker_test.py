@@ -1,5 +1,6 @@
 import unittest 
 from locker import User
+from locker import Credentials
 
 class TestUser(unittest.TestCase):
     '''
@@ -11,7 +12,7 @@ class TestUser(unittest.TestCase):
 
     def setUp(self):
         '''
-        Method to run before each test cases.
+        Method to run before each user test cases.
         '''
         self.new_user = User("FeistyDory","21038")
 
@@ -21,7 +22,7 @@ class TestUser(unittest.TestCase):
         test_init test case to test if the object is initialized properly
         '''
         self.assertEqual(self.new_user.username,'FeistyDory')
-        self.assertEqual(self.new_user.password,'21038')
+        self.assertEqual(self.new_user.password,'210sda38')
 
 
     def test_save_user(self):
@@ -31,6 +32,21 @@ class TestUser(unittest.TestCase):
         
         self.new_user.save_user()
         self.assertEqual(len(User.user_list),1)
+
+
+class TestCredentials(unittest.TestCase):
+    '''
+    Test class that defines test cases for the credentials class behaviours.
+    '''
+
+    def setUp(self):
+        '''
+        Method that runs before each credentials test case.
+        '''
+        self.new_credential = Credentials("Gmail","dorydory","143811jsa")
+
+    
+
 
 if __name__ == "__main__":
     unittest.main() 
