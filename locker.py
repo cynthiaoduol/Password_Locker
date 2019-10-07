@@ -40,6 +40,11 @@ class Credentials():
         self.account = account
         self.userName = userName
         self.password = password
-        
+
+    def save_details(self):
+        '''
+        method to save a new credential instance to the credentials list
+        '''
+        Credentials.credentials_list.append(self)
 
 
