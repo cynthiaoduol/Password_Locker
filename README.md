@@ -1,15 +1,11 @@
-# Password_Locker
-## Author
+#Password_Locker
 
-[cynthiaoduol](https://github.com/cynthiaoduol)
+#### Author: [cynthiaoduol](https://github.com/cynthiaoduol)
 
 ## Description
 
 This project is a python application that manages login and signup credentials of a person for various accounts i.e. username and passwords for each account. It also stores the passwords and generates a unique password for a user if they do not want to generate new passwords by themselves.
 
-## Screenshot
-
-add screenshot here
 
 ## User Stories
 The user would like to.... :
@@ -21,27 +17,53 @@ The user would like to.... :
 
 ## Installation / Setup instruction
 
-#### The application requires the following installations to operate 
-* python3.6
-* pyperclip
-* pip
+**These Simple Instructions will get you a copy of the application running on your terminal.**
 
-#### Cloning
+1. Get into the **Project Repository.**
 
-* Open Terminal {Ctrl+Alt+T}
+Link:-> ```https://github.com/cynthiaoduol/Password_Locker)```
 
-* git clone ``https://github.com/cynthiaoduol``Password_Locker.git
+2. Clone the project.
 
-* cd Password_Locker
+3. Get into project folder (cd into project).
 
-* code . or atom . based on the text editor you have.
+4. If you have all the Pre-requisites you can run the application.
 
-### Running the Application
-* To run the application, open the cloned file in terminal and run the following commands:
+### Pre-requisites
 
-        $ chmod +x interface.py
-        $ ./run.py
-* To run test for the application
-        $ python3 passlock_test.py
+**What things you need to install the application and how to install them.**
+
+```
+Python3.6
+```
+
+
+To Install **python 3.6** on terminal execute
+
+```
+apt-get install python3.6
+```
+
+```
+apt-get install pip3
+```
+
+## Running the application
+
+1. Navigate into the cloned folder using terminal and enter command `./password.py` to run the app.
+The app will open on terminal 
+
+2. Follow and answer the prompts to use the application.
+
+## Built With
+
+* [Python3.6](https://docs.python.org/3/)
+
+## Support and contact details
+ Incase you come across errors, have questions, ideas ,concerns, or want to contribute to the application, feel free to reach me at :cynthiaobu940@gmail.com
+
+### License
+*MIT licence*
+Copyright (c) 2019 **Cynthia Oduol**
 
 
