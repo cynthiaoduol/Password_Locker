@@ -81,9 +81,9 @@ class TestCredentials(unittest.TestCase):
 
 
     def test_delete_credential(self):
-        """
+        '''
         test method to test if we can remove an account credentials from our credentials_list
-        """
+        '''
         self.new_credential.save_details()
         test_credential = Credentials("instagram","feistydory","qwerty") 
         test_credential.save_details()
@@ -92,36 +92,37 @@ class TestCredentials(unittest.TestCase):
         self.assertEqual(len(Credentials.credentials_list),1)
 
 
-    def test_find_credentialr(self):
-        """
+    def test_find_credential(self):
+        '''
         test to check if we can find a credential entry by account name and display the details of the credential
-        """
+        '''
         self.new_credential.save_details()
         test_credential = Credentials("instagram","feistydory","qwerty") 
         test_credential.save_details()
 
-        the_credential = Credentials.find_credential("instagram")
+        get_credential = Credentials.find_credential("instagram")
 
-        self.assertEqual(the_credential.account,test_credential.account)
+        self.assertEqual(get_credential.account,test_credential.account)
 
 
     def test_credential_exist(self):
-        """
-        test to check if we can return a true or false based on whether we find or can't find the credential.
-        """
+        '''
+        test to check if we can return a boolean based on whether we can or can't find the credential.
+        '''
         self.new_credential.save_details()
-        the_credential = Credentials("instagram","feistydory","qwerty") 
-        the_credential.save_details()
+        get_credential = Credentials("instagram","feistydory","qwerty") 
+        get_credential.save_details()
         credential_is_found = Credentials.if_credential_exist("instagram")
         self.assertTrue(credential_is_found)
 
 
     def test_display_all_saved_credentials(self):
         '''
-        test case to check if method that displays all the credentials that has been saved by the user
+        method that returns a list of all credentials saved
         '''
 
         self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
+
 
 
 if __name__ == "__main__":
