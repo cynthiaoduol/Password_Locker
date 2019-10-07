@@ -12,3 +12,9 @@ class User:
         self.password = password 
 
 
+class Credentials():
+    '''
+    Create credentials class to create new objects of credentials
+    '''
+    credentials_list = []
+
